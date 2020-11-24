@@ -1,2 +1,2 @@
 # tour-plan
-pracrice
+practice
