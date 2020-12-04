@@ -30,6 +30,7 @@
             &__link
                 font-size: 11px
                 line-height: 10px
+      
 @media (max-width: 576px)
     .navbar
         &__search, &-menu, &__user
@@ -49,8 +50,6 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
-
-
     .logo
         width: 99px
 @media (max-width: 320px)
@@ -75,4 +74,22 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
+    .stars
+        flex-basis: auto
+    .hotel
+        &-name
+            flex-basis: 100%
+        &-wrapper
+            justify-content: space-between
+        &-info
+            &__text
+                flex-basis: 100%
+            &__name
+                margin-top: 10px
+                margin-bottom: 0
+            &__rating
+                display: none
+            &__offer
+                order: -1
+                margin-left: 0  
 
