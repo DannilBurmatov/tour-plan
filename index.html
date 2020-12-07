@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="sass/style.css" />
   </head>
   <body>
@@ -90,9 +91,7 @@
           <li class="breadcrumb-list__item">
             <a href="#" class="breadcrumb-list__link">Flash Offers</a>
           </li>
-          <li class="breadcrumb-list__item">
-            Grand Hilton Hotel
-          </li>
+          <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
         </ul>
       </div>
       <!-- /.container -->
@@ -102,18 +101,21 @@
       <div class="container">
         <div class="hotel-info">
           <div class="hotel-info__text">
-              <div class="hotel-wrapper">
-                <div class="stars">
-                  <img src="img/Star.svg" alt="star">
-                  <img src="img/Star.svg" alt="star">
-                  <img src="img/Star.svg" alt="star">
-                  <img src="img/Star.svg" alt="star">
-                  <img src="img/Star.svg" alt="star">
-                </div>
-                  <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
-                  <span class="offer hotel-info__offer">Flash Offer</span>
+            <div class="hotel-wrapper">
+              <div class="stars">
+                <img src="img/Star.svg" alt="star" />
+                <img src="img/Star.svg" alt="star" />
+                <img src="img/Star.svg" alt="star" />
+                <img src="img/Star.svg" alt="star" />
+                <img src="img/Star.svg" alt="star" />
               </div>
-              <p class="hotel-description hotel-info__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
+              <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
+              <span class="offer hotel-info__offer">Flash Offer</span>
+            </div>
+            <p class="hotel-description hotel-info__description">
+              Half-Board/ All Inclusive + Complimentary Activities + Child Stays
+              Free
+            </p>
           </div>
           <!-- /.hotel-info__text -->
           <div class="rating hotel-info__rating">
@@ -123,8 +125,37 @@
           </div>
           <!-- /.hotel-info__rating -->
         </div>
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/slide.jpg" alt="slide">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide.jpg" alt="slide">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide.jpg" alt="slide">
+                </div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+            </div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /.slider -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
     </section>
     <!-- /.hotel -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
