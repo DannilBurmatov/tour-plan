@@ -894,6 +894,9 @@ template {
   .slider {
     height: 450px;
   }
+  .booking {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -972,10 +975,11 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 450px;
+    height: 450px;
   }
   .booking {
     width: 100%;
+    margin-right: 0;
   }
   .map {
     width: 100%;
@@ -1027,11 +1031,11 @@ template {
   .hotel__slider {
     height: 180px;
   }
+  .hotel-right {
+    height: 440px;
+  }
   .hotel-info {
     padding-bottom: 36px;
-  }
-  .map {
-    height: 210px;
   }
 }
 /*# sourceMappingURL=style.css.map */
