@@ -126,26 +126,26 @@
           <!-- /.hotel-info__rating -->
         </div>
         <div class="hotel-grid">
-          <div class="slider">
+          <div class="slider hotel__slider">
             <!-- Slider main container -->
             <div class="swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src="img/slide.jpg" alt="slide">
+                  <img class="swiper-slide__img" src="img/slide.jpg" alt="slide">
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide2.jpg" alt="slide">
+                  <img class="swiper-slide__img" src="img/slide2.jpg" alt="slide">
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide3.jpg" alt="slide">
+                  <img class="swiper-slide__img" src="img/slide3.jpg" alt="slide">
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide4.jpg" alt="slide">
+                  <img class="swiper-slide__img" src="img/slide4.jpg" alt="slide">
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide5.jpg" alt="slide">
+                  <img class="swiper-slide__img" src="img/slide5.jpg" alt="slide">
                 </div>
               </div>
               <!-- If we need navigation buttons -->
@@ -188,9 +188,7 @@
             <button class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
-          <div class="map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af2bc48a3e645c7b7ec42a3669741326d048571fd039c3b8decbd474d6f77dfd0&amp;source=constructor" width="347" height="213" frameborder="0"></iframe>
-          </div>
+          <div id="map" style="width: 347px; height: 213px"></div>
           <!-- /.map -->
          </div>
          <!-- /.hotel-right -->
@@ -199,6 +197,8 @@
       </div>
     </section>
     <!-- /.hotel -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d9783ebd-1525-4d35-b218-7f96f230a31&lang=ru_RU" type="text/javascript">
+    </script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
