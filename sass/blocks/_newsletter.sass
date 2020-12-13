@@ -1,11 +1,11 @@
 .newsletter
-    min-height: 260px
+    height: 260px
     position: relative
-    padding: 98px 0 87px
+    padding: 78px 0 66px
     background-image: url(../img/newsletter-bg.jpeg)
     background-repeat: no-repeat
     background-size: cover
-    background-position: center 
+    background-position: center
     &::before
         content: ''
         position: absolute
@@ -17,23 +17,22 @@
         width: 100%
         background-color: rgba($dark,0.8)
     &-wrapper
-         position: relative
-         display: flex
-         align-items: center
-         justify-content: space-between
-         width: 731px
-         margin: auto
-         margin-top: -15px
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 731px
+        margin: auto
     &-title
         font-family: 'Mulish'
         color: $light
-        
         &__span
-            font-family: 'Mulish'
-            font-weight: 100
+            font-family: Mulish
+            font-style: normal
+            font-weight: 300
             font-size: 24px
             line-height: 30px
-        &__strong 
+        &__strong
             font-family: 'Mulish'
             display: block
             font-weight: 300
@@ -46,6 +45,7 @@
     height: 55px
     border-radius: 4px
     overflow: hidden
+    margin-bottom: 4px
     &__input
         position: absolute
         width: 100%
@@ -67,4 +67,8 @@
         width: 65px
         min-height: 15px
         cursor: pointer
-       
+        font-family: Mulish
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px

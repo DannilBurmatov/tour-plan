@@ -1,12 +1,12 @@
+
 @media (max-width: 1200px)
     .container
         max-width: 960px
-    .slider
-        width: 590px
-    .swiper
-        &-slide
+    .hotel
+        &-slider
+            width: 590px
             &__img
-                height: 100%    
+                height: 100%
                 width: 100%
                 object-fit: cover
 @media (max-width: 992px)
@@ -36,13 +36,18 @@
             margin-bottom: 30px
         &-right
             flex-direction: row
+        &-slider
+            width: 100%
     .booking
         width: 340px
-    .slider
-        width: 100%
+        margin: 0
     .map
         width: 340px
         height: 210px
+    .reviews
+        &-slider
+            &__item
+                max-width: 580px
 @media (max-width: 768px)
     .container
         max-width: 700px
@@ -56,13 +61,53 @@
         margin-left: 48px
     .rating
         margin-top: 16px
-    .slider
-        height: 450px
+    .hotel
+        padding-bottom: 60px
+        &-slider
+            height: 450px
+            &__img
+                height: 450px
+                width: 100%
     .booking
         margin-right: 20px
+        margin-left: 0
+        &__info
+            margin-bottom: 7px
+            margin-right: -6px
+            margin-top: 3px
+    .subscribe
+        margin-bottom: -13px
+    .button
+        width: 295px
     .newsletter
         &-wrapper
+            padding: 46px 0 66px
             height: 75px
+        &-title
+            margin-top: 34px
+    .reviews
+        padding: 0
+        margin-bottom: 60px
+        &-slider
+            &__item
+                padding: 0
+                margin-right: 0
+                margin-left: 64px
+                &:after, &::before
+                    display: none
+            &__button
+                top: 50%
+                &--prev
+                    left: 14px
+                &--next
+                    right: -14px
+            &__text
+                max-width: 455px
+                height: 133px
+        &__title
+            margin-bottom: 52px
+            font-size: 30px
+            line-height: 38px
 @media (max-width: 767px)
     .navbar
         &__search, &-menu, &__user
@@ -74,6 +119,19 @@
             height: 155px
             flex-direction: column
             align-items: flex-start
+    .reviews
+        width: 100%
+        &-slider
+            &__button
+                top: 32px
+                &--prev
+                    left: 50%
+                    margin-left: -65px
+                    transform: translate(-50%,0)
+                &--next
+                    right: 50%
+                    margin-right: -65px
+                    transform: translate(150%,0)
 @media (max-width: 576px)
     .menu
         &-button
@@ -83,7 +141,7 @@
             padding: 0
             align-items: center
             justify-content: space-between
-            flex-direction: column 
+            flex-direction: column
             border: none
             cursor: pointer
             &__line
@@ -109,10 +167,14 @@
                 display: none
             &__offer
                 order: -1
-                margin-left: 0  
-    .slider
-        height: 250px
+                margin-left: 0
+        &-slider
+            &__img
+                width: 100%
+                height: 250px
     .hotel
+        &-slider
+            height: 250px
         &__slider
             margin-bottom: 20px
         &-right
@@ -143,7 +205,7 @@
             padding: 0
             align-items: center
             justify-content: space-between
-            flex-direction: column 
+            flex-direction: column
             border: none
             cursor: pointer
             &__line
@@ -154,23 +216,31 @@
         &-list
             padding: 21px 0 19px
     .hotel
-        padding-bottom: 40px
+        padding-bottom: 44px
         &__slider
             height: 180px
         &-right
             height: 400px
         &-info
             padding-bottom: 36px
+        &-slider
+            height: 180px
+            &__img
+                height: 180px
     .map
         height: 172px
+        margin: 0
     .newsletter
+        padding: 34px 0 66px
         height: 320px
         &-wrapper
-            height: 170px
-            margin-top: -32px
+            height: 300px
+            margin-top: -40px
+            padding-bottom: 72px
         &-title
+            margin-left: 9px
+            margin-bottom: 0
             &__span
-                
                 font-weight: 100
                 font-size: 20px
                 line-height: 25px
@@ -179,8 +249,62 @@
                 font-weight: 300
                 font-size: 30px
                 line-height: 38px
+            &__subscribe
+                height: 55px
     .subscribe
         width: 280px
         height: 55px
+        margin-left: 8px
         &__input
             height: 55px
+            padding-left: 20px
+    .reviews
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-align: center
+            width: 245px
+            height: 40px
+            margin-left: 17px
+            margin-top: 37px
+        &-slider
+            height: 438px
+            &__text
+                text-align: left
+                width: 219px
+                height: 266px
+                font-family: Mulish
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 160%
+            &__item
+                margin-left: -3px
+                margin-top: 41px
+            &__profile
+                margin-top: -41px
+            &__avatar
+                margin-bottom: 6px
+            &__button
+                top: 28px
+                &--prev
+                    margin-left: -93px
+                &--next
+                    margin-right: -58px
+    .button
+        width: 235px
+    .container
+        &__span
+            margin-bottom: 5px
+    .booking
+        &__price
+            margin-left: -5px
+            margin-top: -3px
+        &__call-center
+            margin-left: -4px
+        &__numbers
+            margin-left: 5px
+        &__button
+            margin-left: -6px
