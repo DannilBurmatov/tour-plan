@@ -815,6 +815,7 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: scroll;
 }
 
 .newsletter::before {
@@ -904,6 +905,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   padding: 0 19px;
+  height: 55px;
 }
 
 .subscribe__button__send {
@@ -1077,6 +1079,108 @@ template {
   height: 144px;
 }
 
+.activites {
+  padding: 23px 0 98px 0;
+}
+
+.activites__title {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+
+.activites-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 24px 26px;
+}
+
+.card::before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: 0;
+}
+
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.card__title {
+  margin-top: auto;
+  color: #ffffff;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+
+.card__title__2 {
+  width: 153px;
+}
+
+.card__title__3 {
+  width: 161px;
+}
+
+.card__title__4 {
+  width: 200px;
+}
+
+.card__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 7px 22px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1089,6 +1193,10 @@ template {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -1145,6 +1253,20 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .activites-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activites__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    height: 250px;
+  }
+  .card {
+    width: 340px;
+    height: 255px;
   }
 }
 
@@ -1225,6 +1347,14 @@ template {
     font-size: 30px;
     line-height: 38px;
   }
+  .activites {
+    padding-top: 70px;
+  }
+  .card__title {
+    font-size: 16px;
+    line-height: 20px;
+    width: 145px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1246,6 +1376,9 @@ template {
     padding-top: -1px;
     margin-top: -50px;
   }
+  .newsletter-wrapper__subscribe {
+    width: 100%;
+  }
   .reviews {
     width: 100%;
   }
@@ -1266,6 +1399,24 @@ template {
     margin-right: -65px;
     -webkit-transform: translate(150%, 0);
             transform: translate(150%, 0);
+  }
+  .newsletter__subscribe {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .subscribe {
+    max-width: 350px;
+  }
+  .map {
+    margin-left: 0;
+  }
+  .card {
+    width: 45%;
+    height: 255px;
+  }
+  .activites {
+    padding-top: 40px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1351,6 +1502,7 @@ template {
   }
   .map {
     width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -1450,11 +1602,10 @@ template {
   }
   .newsletter-title__subscribe {
     height: 55px;
+    width: 100%;
   }
   .subscribe {
-    width: 280px;
-    height: 55px;
-    margin-left: 8px;
+    height: 280px;
   }
   .subscribe__input {
     height: 55px;
@@ -1537,6 +1688,17 @@ template {
   }
   .booking__button {
     margin-left: -6px;
+  }
+  .activites {
+    padding-top: 57px;
+  }
+  .activites__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 36px;
+  }
+  .card {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

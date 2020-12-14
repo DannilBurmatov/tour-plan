@@ -9,6 +9,9 @@
                 height: 100%
                 width: 100%
                 object-fit: cover
+    .card
+        width: 230px
+        height: 230px
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -48,6 +51,16 @@
         &-slider
             &__item
                 max-width: 580px
+    .activites
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
+    .card
+        height: 250px
+    .card
+        width: 340px
+        height: 255px
 @media (max-width: 768px)
     .container
         max-width: 700px
@@ -108,6 +121,13 @@
             margin-bottom: 52px
             font-size: 30px
             line-height: 38px
+    .activites
+        padding-top: 70px
+    .card
+        &__title
+            font-size: 16px
+            line-height: 20px
+            width: 145px
 @media (max-width: 767px)
     .navbar
         &__search, &-menu, &__user
@@ -122,6 +142,8 @@
             padding: 0
             padding-top: -1px
             margin-top: -50px
+            &__subscribe
+                width: 100%
     .reviews
         width: 100%
         &-slider
@@ -137,6 +159,20 @@
                     right: 50%
                     margin-right: -65px
                     transform: translate(150%,0)
+    .newsletter
+        &__subscribe
+            width: 100%
+            margin-right: 20px
+    .subscribe
+        max-width: 350px
+    .map
+        margin-left: 0
+    .card
+        width: 45%
+        height: 255px
+    .activites
+        padding-top: 40px
+        padding-bottom: 60px
 @media (max-width: 576px)
     .menu
         &-button
@@ -190,6 +226,7 @@
         margin-right: 0
     .map
         width: 100%
+        margin-left: 0
 @media (max-width: 320px)
     .container
         max-width: 280px
@@ -261,10 +298,9 @@
                 line-height: 38px
             &__subscribe
                 height: 55px
+                width: 100%
     .subscribe
-        width: 280px
-        height: 55px
-        margin-left: 8px
+        height: 280px
         &__input
             height: 55px
             padding-left: 20px
@@ -331,3 +367,12 @@
             margin-left: 5px
         &__button
             margin-left: -6px
+    .activites
+        padding-top: 57px
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 36px
+    .card
+        width: 100%
+  

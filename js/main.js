@@ -24,5 +24,11 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
   
 });
+// function parallax(event) {
+//   this.querySelectorAll('.parallax').forEach(parallax => {
+//     parallax.style.transform = `translateY(${event.clientY/50}px)`
+//   });
+// }
+// document.addEventListener('mousemove',parallax);
 
 
