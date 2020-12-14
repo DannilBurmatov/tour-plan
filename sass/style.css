@@ -895,7 +895,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
-  width: 65px;
+  min-width: 65px;
   min-height: 15px;
   cursor: pointer;
   font-family: Mulish;
@@ -903,6 +903,19 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  padding: 0 19px;
+}
+
+.subscribe__button__send {
+  min-width: 29px;
+  min-height: 15px;
+  max-height: 30px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .reviews {
@@ -1229,16 +1242,22 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding: 0;
+    padding-top: -1px;
+    margin-top: -50px;
   }
   .reviews {
     width: 100%;
+  }
+  .reviews-slider__item {
+    margin-right: 50px;
   }
   .reviews-slider__button {
     top: 32px;
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -65px;
+    margin-left: -85px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
@@ -1378,7 +1397,7 @@ template {
     padding: 21px 0 19px;
   }
   .hotel {
-    padding-bottom: 44px;
+    padding-bottom: 42px;
   }
   .hotel__slider {
     height: 180px;
@@ -1400,13 +1419,19 @@ template {
     margin: 0;
   }
   .newsletter {
-    padding: 34px 0 66px;
+    padding: 1px 0 66px;
     height: 320px;
   }
   .newsletter-wrapper {
     height: 300px;
-    margin-top: -40px;
+    margin-top: -44px;
     padding-bottom: 72px;
+    margin-top: -26px;
+    padding-bottom: 50px;
+  }
+  .newsletter-title {
+    margin-bottom: 0px;
+    margin-top: 100px;
   }
   .newsletter-title {
     margin-left: 9px;
@@ -1444,7 +1469,7 @@ template {
     width: 245px;
     height: 40px;
     margin-left: 17px;
-    margin-top: 37px;
+    margin-top: 40px;
   }
   .reviews-slider {
     height: 438px;
@@ -1458,16 +1483,32 @@ template {
     font-weight: normal;
     font-size: 12px;
     line-height: 160%;
+    margin-top: 30px;
+    margin-left: 35px;
   }
   .reviews-slider__item {
     margin-left: -3px;
     margin-top: 41px;
+    margin-right: 0;
   }
   .reviews-slider__profile {
     margin-top: -41px;
+    margin-left: 50px;
+    margin-bottom: 1px;
   }
   .reviews-slider__avatar {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
+    margin-right: 52px;
+  }
+  .reviews-slider__username {
+    margin-bottom: 10px;
+    margin-right: 49px;
+  }
+  .reviews-slider__date {
+    margin-right: 49px;
+  }
+  .reviews-slider__raiting {
+    margin-right: 49px;
   }
   .reviews-slider__button {
     top: 28px;
