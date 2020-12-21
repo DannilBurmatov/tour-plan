@@ -88,6 +88,8 @@
             margin-bottom: 7px
             margin-right: -6px
             margin-top: 3px
+    .map
+        margin-left: 0
     .subscribe
         margin-bottom: -13px
     .button
@@ -104,12 +106,11 @@
         &-slider
             &__item
                 padding: 0
-                margin-right: 0
-                margin-left: 64px
+                padding-bottom: 30px
                 &:after, &::before
                     display: none
             &__button
-                top: 50%
+                top: 46%
                 &--prev
                     left: 14px
                 &--next
@@ -122,12 +123,20 @@
             font-size: 30px
             line-height: 38px
     .activites
-        padding-top: 70px
+        padding-top: 40px
     .card
         &__title
             font-size: 16px
             line-height: 20px
             width: 145px
+            &__1
+                width: 145px
+            &__2
+                width: 153px
+            &__3
+                width: 161px
+            &__4
+                width: 200px
 @media (max-width: 767px)
     .navbar
         &__search, &-menu, &__user
@@ -136,7 +145,7 @@
         &-wrapper
             max-width: 700px
             width: 92%
-            height: 155px
+            height: 175px
             flex-direction: column
             align-items: flex-start
             padding: 0
@@ -148,7 +157,8 @@
         width: 100%
         &-slider
             &__item
-                margin-right: 50px
+                max-width: 590px
+                max-height: 435px
             &__button
                 top: 32px
                 &--prev
@@ -159,12 +169,21 @@
                     right: 50%
                     margin-right: -65px
                     transform: translate(150%,0)
+            &__text
+                padding-right: 20px
+                padding-left: 20px
+                margin: 0
     .newsletter
         &__subscribe
             width: 100%
             margin-right: 20px
     .subscribe
         max-width: 350px
+        &__input
+            max-width: 305px
+    .booking
+        &__button
+            width: 100%
     .map
         margin-left: 0
     .card
@@ -227,6 +246,8 @@
     .map
         width: 100%
         margin-left: 0
+    .card
+        width: 100%
 @media (max-width: 320px)
     .container
         max-width: 280px
@@ -293,7 +314,7 @@
                 line-height: 25px
             &__strong
                 margin-bottom: 17px
-                font-weight: 300
+                font-weight: 600
                 font-size: 30px
                 line-height: 38px
             &__subscribe
@@ -301,10 +322,18 @@
                 width: 100%
     .subscribe
         height: 280px
+        margin-top: 25px
+        margin-left: 5px
         &__input
+            max-width: 280px
             height: 55px
             padding-left: 20px
+            width: 280px
+        &__button
+            right: 11px
     .reviews
+        padding: 37px 0 39px 0
+        margin: 0
         &__title
             font-style: normal
             font-weight: bold
@@ -313,31 +342,29 @@
             text-align: center
             width: 245px
             height: 40px
+            padding: 0
+            margin: 0
+            margin-bottom: 46px
             margin-left: 17px
-            margin-top: 40px
         &-slider
-            height: 438px
             &__text
                 text-align: left
-                width: 219px
                 height: 266px
                 font-family: Mulish
                 font-style: normal
                 font-weight: normal
                 font-size: 12px
                 line-height: 160%
-                margin-top: 30px
-                margin-left: 35px
+                width: 219px
+                padding: 0
             &__item
-                margin-left: -3px
-                margin-top: 41px
-                margin-right: 0
+                max-width: 580px
             &__profile
                 margin-top: -41px
                 margin-left: 50px
                 margin-bottom: 1px
             &__avatar
-                margin-bottom: 5px
+                margin-bottom: 8px
                 margin-right: 52px
             &__username
                 margin-bottom: 10px
@@ -346,8 +373,9 @@
                 margin-right: 49px
             &__raiting
                 margin-right: 49px
+                margin-bottom: 30px
             &__button
-                top: 28px
+                top: 33px
                 &--prev
                     margin-left: -93px
                 &--next
@@ -372,7 +400,17 @@
         &__title
             font-size: 18px
             line-height: 23px
+            margin: 0
             margin-bottom: 36px
+        &__card
+            &__1
+                margin-bottom: 21px
+            &__2
+                order: 1
+                margin-bottom: 20px
+            &__3
+                margin-bottom: 28px
+            &__4
+                order: 1
     .card
         width: 100%
-  
