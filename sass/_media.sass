@@ -1,4 +1,3 @@
-
 @media (max-width: 1200px)
     .container
         max-width: 960px
@@ -12,6 +11,15 @@
     .card
         width: 230px
         height: 230px
+    .footer
+        &__input
+            flex-basis: 100%
+        &__under
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 0
+            margin: 0
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -61,6 +69,37 @@
     .card
         width: 340px
         height: 255px
+    .footer
+        &-wrapper
+            grid-template-columns: repeat(6,1fr)
+            grid-row-gap: 40px
+        &__input
+            flex-basis: 49%
+        &__logo
+            grid-row: 1 / 2
+            grid-column: span 2
+        &__social
+            &-network
+                grid-row: 1 / 2
+                grid-column: span 4
+                align-self: center
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 2
+        &__additional
+            grid-column: span 2
+        &__legal
+            grid-column: span 2
+        &__contact
+            &-details
+                grid-row: 3
+                grid-column: span 5
+            &-form
+                grid-column: span 5
+                grid-row: 4
+        &__under
+            grid-column-start: 1
+            grid-column-end: 7
 @media (max-width: 768px)
     .container
         max-width: 700px
@@ -124,6 +163,7 @@
             line-height: 38px
     .activites
         padding-top: 40px
+        padding-bottom: 50px
     .card
         &__title
             font-size: 16px
@@ -137,6 +177,45 @@
                 width: 161px
             &__4
                 width: 200px
+    .footer
+        padding-top: 70px
+        &__title
+            &--mb-3
+                margin-bottom: 32px
+                margin-top: 10px
+        &--logo
+            width: 104px
+            height: 120px
+        &__under
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-basis: 100%
+            max-width: 696px
+            height: 22px
+            grid-column: span
+            grid-row: 5
+        &__form
+            max-width: 539px
+        &__input
+            max-width: 255px
+        &__button
+            max-width: 160px
+        &__social
+            &-network
+                margin-left: -53px
+        &__additional
+            margin-left: -39px
+        &__legal
+            margin-left: 19px
+        &__contact
+            &-details
+                margin-left: 4px
+            &-form
+                margin-left: 0
+                margin-top: -8px
+        &__form
+            margin-bottom: 16px
 @media (max-width: 767px)
     .navbar
         &__search, &-menu, &__user
@@ -192,6 +271,10 @@
     .activites
         padding-top: 40px
         padding-bottom: 60px
+    .footer
+        &__input
+            flex-basis: 100%
+        &__under
 @media (max-width: 576px)
     .menu
         &-button
@@ -248,6 +331,38 @@
         margin-left: 0
     .card
         width: 100%
+    .footer
+        &-wrapper
+            grid-template-columns: minmax(280px,500px)
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+                margin-left: 0
+        &__additional
+            grid-row: 3
+            grid-column: 1
+            margin-left: 0
+        &__categories
+            grid-row: 4
+            grid-column: 1
+        &__legal
+            grid-row: 5
+            grid-column: 1
+            margin-left: 0
+        &__contact
+            flex-basis: 100%
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
+        &__under
+            grid-row: 8
+            grid-column: 1
 @media (max-width: 320px)
     .container
         max-width: 280px
@@ -397,6 +512,7 @@
             margin-left: -6px
     .activites
         padding-top: 57px
+        padding-bottom: 40px
         &__title
             font-size: 18px
             line-height: 23px
@@ -414,3 +530,78 @@
                 order: 1
     .card
         width: 100%
+    .footer
+        padding-top: 64px
+        &-wrapper
+            grid-template-columns: repeat(1, 280px)
+        &__social
+            &-network
+                width: 167px
+                height: 67px
+                flex-wrap: wrap
+                margin-left: 0
+                margin-top: -8px
+        &__title
+            &--inline
+                grid-row: 2
+                grid-column: 1
+                width: 167px
+                margin: 0
+                margin-bottom: 22px
+            &--mb-3
+                margin-bottom: 33px
+        &__txt
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 160%
+        &__contact
+            &-details
+                max-width: 280px
+        &__button
+            width: 160px
+            height: 50px
+            order: 2
+        &__info
+            order: 1
+            margin-bottom: 15px
+            flex-basis: 100%
+        &__under
+            display: flex
+            flex-wrap: wrap
+            grid-row: 8
+            width: 277px
+            grid-column-start: 1
+            grid-column-end: 1
+            height: 47px
+        &__links
+            margin-right: 3px
+        &__cont
+            width: 277px
+            height: 15px
+        &__legal
+            grid-row: 3
+            margin-left: 0
+            margin-top: -10px
+        &__additional
+            grid-row: 4
+            margin-left: 0
+            margin-top: -10px
+        &__categories
+            grid-row: 5
+            margin-left: 0
+            margin-top: -13px
+        &__contact
+            &-details
+                margin-left: 0
+                margin-top: -10px
+        &__form
+            margin-top: -19px
+        &__input
+            max-width: 280px
+        &__info
+            margin-top: -8px
+        &__under
+            margin-top: -31px
+        &__cont
+            margin-bottom: 14px
