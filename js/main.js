@@ -22,13 +22,12 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     nextEl: ".reviews-slider__button--next",
     prevEl: ".reviews-slider__button--prev",
   },
-  
 });
-// function parallax(event) {
-//   this.querySelectorAll('.parallax').forEach(parallax => {
-//     parallax.style.transform = `translateY(${event.clientY/50}px)`
-//   });
-// }
-// document.addEventListener('mousemove',parallax);
 
-
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+});

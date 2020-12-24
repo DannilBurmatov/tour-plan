@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="sass/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -23,7 +23,10 @@
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -33,7 +36,7 @@
               <img src="img/search.svg" alt="Icon: serach" />
             </button>
           </form>
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile_hidden">
             <img
               src="img/avatar-user.jpeg"
               alt="avatar: Nathan"
@@ -56,6 +59,31 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+              <a href="#" class="user navbar__user navbar__user--mobile_visible">
+                <img
+                  src="img/avatar-user.jpeg"
+                  alt="avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile_visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: serach" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -586,7 +614,9 @@
           </div>
           <!-- /.footer__social-network -->
           <div class="footer__list footer__legal">
-            <h3 class="footer__title footer__title--legal">LEGAL INFORMATION</h3>
+            <h3 class="footer__title footer__title--legal">
+              LEGAL INFORMATION
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">Terms & Conditions </a>
@@ -633,9 +663,10 @@
                   />
                 </div>
                 <span class="footer__txt">
-                  Tel (business hours) : 269 1500 <br> Tel (hotline) Monday -
-                  Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br> Tel (hotline)
-                  Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                  Tel (business hours) : 269 1500 <br />
+                  Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
+                  pm) <br />
+                  Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
                 </span>
               </li>
               <li class="footer__item footer__item--mb-2">
@@ -646,9 +677,7 @@
                     alt="icon: email"
                   />
                 </div>
-                <span class="footer__txt">
-                  cherly.lawson@example.com
-                </span>
+                <span class="footer__txt"> cherly.lawson@example.com </span>
               </li>
             </ul>
           </div>
@@ -663,7 +692,7 @@
               />
               <input
                 type="text"
-                class="input footer__input "
+                class="input footer__input"
                 placeholder="Phone Number*"
               />
               <textarea
