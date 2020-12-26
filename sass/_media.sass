@@ -180,10 +180,11 @@
     .footer
         padding-top: 70px
         &__title
+            max-width: 260px
             &--mb-3
                 margin-bottom: 32px
                 margin-top: 10px
-        &--logo
+        &__logo
             width: 104px
             height: 120px
         &__under
@@ -205,7 +206,8 @@
             &-network
                 margin-left: -53px
         &__additional
-            margin-left: -39px
+            margin-left: -26px
+            maw-width: 260px
         &__legal
             margin-left: 19px
         &__contact
@@ -216,6 +218,14 @@
                 margin-top: -8px
         &__form
             margin-bottom: 16px
+        &__categories
+            max-width: 152px
+            margin-left: 0
+    .addit
+        max-width: 260px
+        display: flex
+        &__tlt
+            flex-basis: 100%
 @media (max-width: 767px)
     body
         padding-top: 78px
@@ -236,17 +246,18 @@
         &__user
             flex-direction: column
             justify-content: center
-                
         &-bottom
             display: none
             position: fixed
             left: 0
             right: 0
             bottom: 0
-            top: 78px
-            padding-top: 30px
+            top: 70px
+            padding-top: 38px
             &--visible
                 display: block
+                max-height: 100%
+                overflow-y: auto
         &-menu
             flex-direction: column
             &__item
@@ -329,7 +340,11 @@
     .footer
         &__input
             flex-basis: 100%
-        &__under
+    .modal
+        &__dialog
+            overflow: auto
+            position: fixed
+            max-height: 100%
 @media (max-width: 576px)
     .menu
         &-button
@@ -418,6 +433,9 @@
         &__under
             grid-row: 8
             grid-column: 1
+    .modal
+        &__dialog
+            top: 57%
 @media (max-width: 320px)
     .container
         max-width: 280px
@@ -574,6 +592,7 @@
         padding-top: 64px
         &-wrapper
             grid-template-columns: repeat(1, 280px)
+            grid-row-gap: 38px
         &__social
             &-network
                 width: 167px
@@ -589,7 +608,7 @@
                 margin: 0
                 margin-bottom: 22px
             &--mb-3
-                margin-bottom: 33px
+                margin-bottom: 35px
         &__txt
             font-style: normal
             font-weight: normal
@@ -630,11 +649,13 @@
         &__categories
             grid-row: 5
             margin-left: 0
-            margin-top: -13px
+            margin-top: -8px
         &__contact
             &-details
                 margin-left: 0
                 margin-top: -10px
+            &-form
+                margin-top: -12px
         &__form
             margin-top: -19px
         &__input
@@ -645,17 +666,45 @@
             margin-top: -31px
         &__cont
             margin-bottom: 14px
+        &__txt
+            max-width: 249px
+            margin-left: -10px
+            margin-top: -4px
     .navbar
         &-menu
             max-width: 320px
             padding-right: 38px
             padding-left: 38px
+            padding-top: 0
+            &--mobile
+                &--visible
+                    max-width: 243px
+                    flex-basis: 100%
             &__item
-                &--mobile
-                    &--visible
-                        max-width: 243px
-                        flex-basis: 100%
+                margin-bottom: 0
+        &__search
+            &--mobile
+                &--visible
+        &__link
+            margin-top: 1px
     .search
         margin-left: 0
+        margin-bottom: 35px
         &__input
             max-width: 243px
+    .user
+        &__name
+            &--light
+                margin-bottom: 28px
+                margin-top: 6px
+    .srch
+        margin-bottom: 1px
+    .ttm
+        margin-bottom: 17px
+    .feel
+        margin-left: -2px
+    .modal
+        &__dialog
+            max-width: 300px
+            padding: 33px 40px
+            top: 55%
