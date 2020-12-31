@@ -10,22 +10,27 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css" />
   </head>
   <body>
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
-        <div class="navbar-top">
+        <div class="navbar-top" >
           <a href="#" class="logo">
             <img
               src="img/logo.svg"
               alt="logo: Best Tour Plan"
               class="logo__image"
+              data-aos="flip-up"
+              data-aos-delay="200"
             />
           </a>
           <form
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
+            data-aos="flip-down"
+            data-aos-delay="400"
           >
             <input
               type="text"
@@ -41,8 +46,10 @@
               src="img/avatar-user.jpeg"
               alt="avatar: Nathan"
               class="user__avatar"
+              data-aos="flip-left"
+              data-aos-delay="600"
             />
-            <span class="user__name">Nathan</span>
+            <span data-aos-delay="650" data-aos="flip-left" class="user__name">Nathan</span>
           </a>
           <!-- /.user -->
           <button class="menu-button navbar-top__menu-button">
@@ -209,7 +216,7 @@
           </div>
           <!-- /.swiper-container -->
           <div class="hotel-right">
-            <div class="booking">
+            <div class="booking" data-aos="zoom-in">
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__start">price starts as</span>
@@ -288,6 +295,7 @@
           action="send.php"
           method="POST"
           class="subscribe form newsletter__subscribe"
+          data-aos="zoom-in-down"
         >
           <input
             type="email"
@@ -314,6 +322,8 @@
                     src="img/reviews-avatar.jpeg"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
+                    data-aos="flip-right"
+                    data-aos-delay="500"
                   />
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2020</span>
@@ -496,7 +506,7 @@
       <div class="container">
         <h2 class="activites__title">Other Activities</h2>
         <div class="activites-wrapper">
-          <div class="card activites__card activites__card__1">
+          <div class="card activites__card activites__card__1" data-aos="fade-right" data-aos-delay="100">
             <img
               src="img/activity-1.jpg"
               alt="The curious corner 
@@ -508,7 +518,7 @@
             </h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activites__card activites__card__2">
+          <div class="card activites__card activites__card__2 " data-aos="fade-down" data-aos-delay="300">
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf
@@ -520,7 +530,7 @@
             </h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activites__card activites__card__3">
+          <div class="card activites__card activites__card__3" data-aos="fade-up" data-aos-delay="500">
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking
@@ -533,7 +543,7 @@
             </h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activites__card activites__card__4">
+          <div class="card activites__card activites__card__4 " data-aos="fade-left" data-aos-delay="700">
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery
@@ -696,7 +706,9 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3 send">Send us a message</h3>
+            <h3 class="footer__title footer__title--mb-3 send">
+              Send us a message
+            </h3>
             <form action="send.php" method="POST" class="form footer__form">
               <input
                 type="text"
@@ -791,6 +803,7 @@
     </div>
     <!-- /.modal -->
     <!-- /.activites -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
