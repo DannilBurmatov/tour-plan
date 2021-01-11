@@ -1,1 +1,6 @@
 css/style.css
+node_modules
+.cache
+dist
+.DS_Store
+build
