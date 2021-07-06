@@ -1,4 +1,16 @@
-$(document).ready(function () {
+const $ = require("jquery");
+window.$ = window.jQuery = $;
+
+import AOS from 'aos';
+import Swiper from 'swiper';
+import 'jquery-mask-plugin';
+import 'jquery-validation';
+import Parallax from '../js/jquery-parallax';
+
+$(function () {
+  AOS.init();
+  Parallax($, window);
+
   var hotelSlider = new Swiper(".hotel-slider", {
     // Optional parameters
     loop: true,
